@@ -1,0 +1,120 @@
+body {
+    background-image: radial-gradient(circle, rgb(242, 252, 252) 0%, rgb(247, 244, 238) 100%);
+    position: absolute;
+    width: 100%;
+    top: 0;
+    margin: 0;
+    padding: 0;
+    left: 0;
+}
+
+html {
+    background-image: url(../imgs/banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    bottom: 0;
+}
+
+ul>li>a {
+    color: #373637;
+}
+
+ul>li>a:hover {
+    color: #858AA5;
+}
+
+h1 {
+    font-family: 'Amatic SC', cursive;
+    font-size: 4rem;
+}
+
+h1,
+p {
+    text-align: center;
+}
+
+.btn-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-curriculo {
+    padding: 1rem 4rem;
+    color: #ffffff;
+    text-decoration: none!important;
+    background-color: #373637;
+    font-weight: bold;
+    position: relative;
+    transition: all 0.5s;
+    margin-bottom: 1rem;
+}
+
+.btn-curriculo:hover {
+    color: #e9ece4;
+}
+
+.btn-curriculo::before {
+    content: "";
+    position: absolute;
+    bottom: -1rem;
+    height: 1rem;
+    width: 100%;
+    left: 0.5rem;
+    background-color: #e9ece4;
+    transform: skewX(45deg);
+    transition: all 0.5s;
+}
+
+.btn-curriculo::after {
+    content: "";
+    position: absolute;
+    right: -1rem;
+    width: 1rem;
+    height: 100%;
+    bottom: -0.6rem;
+    background-color: #bfc0c5;
+    transform: skewY(45deg);
+    transition: all 0.5s;
+}
+
+.btn-curriculo:active {
+    margin: 0.75rem 0rem 0rem;
+}
+
+.btn-curriculo:active::before {
+    bottom: -0.5rem;
+    left: 0.25rem;
+    height: 0.5rem;
+}
+
+.btn-curriculo:active::after {
+    right: -0.5rem;
+    width: 0.5rem;
+    bottom: -0.25rem;
+}
+
+@media only screen and (max-width: 600px) {
+    html {
+        background-image: url(../imgs/banner.jpg);
+        background-repeat: no-repeat;
+        height: 100%;
+    }
+    body {
+        overflow: hidden;
+    }
+    .container-mobile {
+        display: flex;
+        flex-direction: row;
+        justify-content: center!important;
+        align-items: center;
+    }
+    .center-container {
+        width: 100%;
+        padding: 0 0 0 0;
+    }
+}

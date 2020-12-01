@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currículo</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel='stylesheet' href='/styles/curriculo.css' />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+</head>
+
+<body>
+    <header class="container">
+        <!-- <ul class="nav justify-content-end m-2 social">
+            <li class="nav-item">
+                <a class="nav-link fab fa-instagram fa-2x active icon-instagram" href="#"></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link fab fa-github fa-2x icon-github" href="#"></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link fab fa-linkedin fa-2x icon-linkedin" href="#"></a>
+            </li>
+
+        </ul> -->
+        <section class="content m-2">
+            <div class="justify-content-start" id="avatar">
+                <ul class="nav   social">
+                    <li class="nav-item">
+                        <a class="nav-link fab fa-instagram fa-2x active icon-instagram" href="#"></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fab fa-github fa-2x icon-github" href="#"></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fab fa-linkedin fa-2x icon-linkedin" href="#"></a>
+                    </li>
+
+                </ul>
+                <strong class="name-curriculo"><%= name %></strong>
+                <p>
+                    <%= profession %>
+                </p>
+
+            </div>
+
+            <section class="container center-container m-2">
+                <div class="card shadow rounded-0 card-color">
+                    <div class="card-body">
+                        <p>
+                            <%= description %>
+                        </p>
+
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Experiência profissional</h5>
+                                <ul class="list-group list-group-flush">
+                                    <% experience.map(experience => { %>
+                                        <li class="list-group-item">
+                                            <strong><%= experience.company  %>:</strong>
+                                            <strong><%= experience.office  %> - </strong>
+                                            <strong><%= experience.description  %></strong>
+                                        </li>
+                                        <% }); %>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Educação</h5>
+                                <ul class="list-group list-group-flush">
+                                    <%  education.map(education => { %>
+                                        <li class="list-group-item">
+                                            <strong> <%=  education.instituition %></strong>
+                                            <strong> <%=  education.levelEducation %></strong>
+                                            <strong> <%=  education.curse %></strong>
+                                        </li>
+                                        <% }); %>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title"> Minhas Skills</h5>
+                                <ul class="list-group list-group-flush">
+                                    <% skills.map(skills => { %>
+                                        <li class="list-group-item">
+                                            <strong><%= skills %></strong>
+                                        </li>
+                                        <% }); %>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Projetos paralelos</h5>
+                                <ul class="list-group list-group-flush">
+                                    <% projetosParalelos.map(projetosParalelos => { %>
+                                        <li class="list-group-item">
+                                            <strong><%= projetosParalelos.name %></strong>
+                                        </li>
+                                        <% }); %>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+
+    </header>
+
+
+    <script src="/js/carrega-img.js"></script>
+</body>
+
+</html>

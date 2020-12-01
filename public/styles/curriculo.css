@@ -1,0 +1,88 @@
+/* :root {} */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: rgb(168, 69, 247);
+    background: linear-gradient(40deg, rgba(168, 69, 247, 1) 0%, rgb(249, 249, 250) 20%);
+}
+
+h5 {
+    text-align: center;
+}
+
+.icon-instagram {
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.icon-github {
+    background: #000000;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.card-color {
+    background: rgba(168, 69, 247, 1);
+    color: #ffffff;
+    margin-bottom: 1rem;
+}
+
+.content {
+    display: flex;
+}
+
+img {
+    width: 15rem;
+    height: 15rem;
+    border-radius: 100%;
+    object-fit: cover;
+}
+
+p {
+    padding-left: 2.8rem;
+}
+
+.name-curriculo {
+    font-size: 1.4rem;
+    width: 100%;
+}
+
+.social {
+    margin-bottom: 1rem;
+}
+
+ul {
+    transform: translate(5%, 5%);
+}
+
+ul li {
+    list-style: none;
+}
+
+ul li a {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    display: block;
+    text-align: center;
+    margin: 0 10px;
+    border-radius: 50%;
+    padding: 1rem;
+    box-sizing: border-box;
+    text-decoration: none;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+    background: linear-gradient(0deg, #ddd, #fff);
+    transition: .5s;
+}
+
+ul li a:hover {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    text-decoration: none;
+}
